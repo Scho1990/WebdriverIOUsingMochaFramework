@@ -1,0 +1,26 @@
+const elementUtil = require('../util/elementUtil')
+
+class LoginPage{
+    // page locators
+    get username(){return $('#username')}
+    get password(){return $('#password')}
+    get loginBtn(){return $('#loginBtn')}
+    get signUpLink(){return $('=Sign up')}
+
+
+    // page actions
+    getPageTitle(pageTitle){
+        return elementUtil.doGetPageTitle(pageTitle)
+    }
+
+    isSignUpLinkExist(){
+        return elementUtil.doIsDisplayed(this.signUpLink)
+    }
+
+    doLogin(emailID,pwd){
+        elementUtil.doSetValue(this.username,emailID)
+        elementUtil.doSetValue(this.password,pwd)
+        elementUtil.doClick(this.loginBtn)
+    }
+}
+module.exports = new LoginPage()

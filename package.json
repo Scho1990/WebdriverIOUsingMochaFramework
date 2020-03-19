@@ -1,0 +1,27 @@
+{
+  "name": "webdriverio-mocha-framework-pom",
+  "version": "1.0.0",
+  "description": "This is Mocha framework using POM design pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js"
+  },
+  "author": "Santosh Choudhary",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/local-runner": "^5.18.7",
+    "@wdio/mocha-framework": "^5.18.7",
+    "@wdio/spec-reporter": "^5.18.7",
+    "@wdio/sync": "^5.18.7",
+    "@wdio/selenium-standalone-service": "^5.16.10",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^80.0.1",
+    "local-runner": "^0.1.1-alpha",
+    "wdio-chromedriver-service": "^5.0.2",
+    "webdriverio": "^5.18.7"
+  },
+  "dependencies": {
+    "@wdio/cli": "^5.18.7"
+  }
+}
